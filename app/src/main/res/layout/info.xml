@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Info_Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="识别码："
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/Info_fAutoNr_"
+        android:layout_toEndOf="@id/Info_Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/Info_Text2"
+        android:layout_below="@id/Info_Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模具编号："
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/Info_fMouldNr"
+        android:layout_below="@id/Info_Text1"
+        android:layout_toEndOf="@id/Info_Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/Info_Text3"
+        android:layout_below="@id/Info_Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="工艺："
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/Info_fProcName"
+        android:layout_toEndOf="@id/Info_Text3"
+        android:layout_below="@id/Info_Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/Info_Text4"
+        android:layout_below="@id/Info_Text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="工件："
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/Info_fPieceName"
+        android:layout_toEndOf="@id/Info_Text4"
+        android:layout_below="@id/Info_Text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/Info_Text5"
+        android:layout_below="@id/Info_Text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="员工："
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/Info_fWorkerName"
+        android:layout_below="@id/Info_Text4"
+        android:layout_toEndOf="@id/Info_Text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/Info_Text6"
+        android:layout_below="@id/Info_Text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="员工号："
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/Info_fWorkerNr"
+        android:layout_below="@id/Info_Text5"
+        android:layout_toEndOf="@id/Info_Text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/Info_Text7"
+        android:layout_below="@id/Info_Text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="机台："
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/Info_fMachineName"
+        android:layout_below="@id/Info_Text6"
+        android:layout_toEndOf="@id/Info_Text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/Info_Text8"
+        android:layout_below="@id/Info_Text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="机台号："
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/Info_fMachineNr"
+        android:layout_below="@id/Info_Text7"
+        android:layout_toEndOf="@id/Info_Text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+    <TextView
+        android:layout_below="@id/Info_Text8"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注意：
+        请员工自己确认以上信息无误，错误请返回重新操作
+        此信息出错，将会直接导致录单的错误
+        （将可能导致做白工）"
+        android:textSize="24px"
+        android:textColor="#ff0000"/>
+
+
+    <Button
+        android:id="@+id/Other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"
+        android:text="其他 录单"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/JDR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"
+        android:text="JDR 录单"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/Other"/>
+
+    <Button
+        android:id="@+id/JD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"
+        android:text="JD 录单"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/JDR"/>
+</RelativeLayout>

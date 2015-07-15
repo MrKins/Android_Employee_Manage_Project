@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/Employee_Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择自己的名字点击以作确认并登陆"
+        android:textSize="50dp"
+        android:textColor="#66ccff"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/Employee_ItemsName"
+        android:layout_below="@+id/Employee_Text1"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="25px"
+            android:text="员工编号"
+            android:layout_weight="1">
+        </TextView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="25px"
+            android:text="员工名字"
+            android:layout_weight="1">
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Employee_list"
+        android:layout_below="@+id/Employee_ItemsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true">
+    </ListView>
+
+</RelativeLayout>

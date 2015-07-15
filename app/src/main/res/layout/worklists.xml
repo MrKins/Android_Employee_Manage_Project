@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/WorkLists_Info">
+
+        <TextView
+            android:id="@+id/WorkLists_Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前选择工作组为："
+            android:textSize="30px"/>
+
+        <TextView
+            android:layout_toEndOf="@id/WorkLists_Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CNC组"
+            android:textSize="30px"
+            android:textColor="#66ccff"/>
+
+        <TextView
+            android:id="@+id/WorkLists_Text2"
+            android:layout_below="@id/WorkLists_Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前选择员工  "
+            android:textSize="30px"/>
+
+        <TextView
+            android:id="@+id/WorkLists_Text3"
+            android:layout_below="@id/WorkLists_Text1"
+            android:layout_toEndOf="@id/WorkLists_Text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     名字："
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/WorkLists_fWorkerName"
+            android:layout_below="@id/WorkLists_Text1"
+            android:layout_toEndOf="@id/WorkLists_Text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30px"/>
+
+        <TextView
+            android:id="@+id/WorkLists_Text4"
+            android:layout_below="@id/WorkLists_Text1"
+            android:layout_toEndOf="@id/WorkLists_fWorkerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="        编号："
+            android:textSize="30px"/>
+
+        <TextView
+            android:id="@+id/WorkLists_fWorkerNr"
+            android:layout_below="@id/WorkLists_Text1"
+            android:layout_toEndOf="@id/WorkLists_Text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30px"/>
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/WorkLists_ItemsName"
+        android:layout_below="@id/WorkLists_Info"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20px"
+            android:text="识别码"
+            android:layout_weight="1">
+        </TextView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20px"
+            android:text="模具编号"
+            android:layout_weight="1">
+        </TextView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20px"
+            android:text="工艺"
+            android:layout_weight="1">
+        </TextView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20px"
+            android:text="工件"
+            android:layout_weight="1">
+        </TextView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20px"
+            android:text="员工号"
+            android:layout_weight="1">
+        </TextView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20px"
+            android:text="员工"
+            android:layout_weight="1">
+        </TextView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20px"
+            android:text="机台号"
+            android:layout_weight="1">
+        </TextView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20px"
+            android:text="机台"
+            android:layout_weight="1">
+        </TextView>
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20px"
+            android:text="计划起工"
+            android:layout_weight="1">
+        </TextView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20px"
+            android:text="计划完工"
+            android:layout_weight="1">
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/WorkList"
+        android:layout_below="@+id/WorkLists_ItemsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true">
+    </ListView>
+
+</RelativeLayout>

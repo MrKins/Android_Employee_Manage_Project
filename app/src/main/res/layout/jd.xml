@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/JD_Text0"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前录单类型是："
+        android:textSize="50dp"/>
+
+    <TextView
+        android:id="@+id/JD_fActType"
+        android:layout_toEndOf="@id/JD_Text0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:textColor="#ff0000"
+        android:text="JD"/>
+
+    <TextView
+        android:id="@+id/JD_Text1"
+        android:layout_below="@id/JD_Text0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="识别码："
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/JD_fAutoNr_"
+        android:layout_below="@id/JD_Text0"
+        android:layout_toEndOf="@id/JD_Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/JD_Text2"
+        android:layout_below="@id/JD_Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模具编号："
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/JD_fMouldNr"
+        android:layout_below="@id/JD_Text1"
+        android:layout_toEndOf="@id/JD_Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/JD_Text3"
+        android:layout_below="@id/JD_Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="工艺："
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/JD_fProcName"
+        android:layout_toEndOf="@id/JD_Text3"
+        android:layout_below="@id/JD_Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/JD_Text4"
+        android:layout_below="@id/JD_Text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="工件："
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/JD_fPieceName"
+        android:layout_toEndOf="@id/JD_Text4"
+        android:layout_below="@id/JD_Text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/JD_Text5"
+        android:layout_below="@id/JD_Text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="员工："
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/JD_fWorkerName"
+        android:layout_below="@id/JD_Text4"
+        android:layout_toEndOf="@id/JD_Text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/JD_Text6"
+        android:layout_below="@id/JD_Text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="员工号："
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/JD_fWorkerNr"
+        android:layout_below="@id/JD_Text5"
+        android:layout_toEndOf="@id/JD_Text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/JD_Text7"
+        android:layout_below="@id/JD_Text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="机台："
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/JD_fMachineName"
+        android:layout_below="@id/JD_Text6"
+        android:layout_toEndOf="@id/JD_Text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/JD_Text8"
+        android:layout_below="@id/JD_Text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="机台号："
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/JD_fMachineNr"
+        android:layout_below="@id/JD_Text7"
+        android:layout_toEndOf="@id/JD_Text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"/>
+
+
+    <Button
+        android:id="@+id/JD_Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开工"
+        android:textSize="20px"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/JD_Pause"/>
+
+    <Button
+        android:id="@+id/JD_Pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="暂工"
+        android:textSize="20px"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/JD_Stop" />
+
+    <Button
+        android:id="@+id/JD_Stop"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完工"
+        android:textSize="20px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/JD_StartFlag"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"/>
+    <TextView
+        android:id="@+id/JD_PauseFlag"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"/>
+    <TextView
+        android:id="@+id/JD_StopFlag"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"/>
+</RelativeLayout>

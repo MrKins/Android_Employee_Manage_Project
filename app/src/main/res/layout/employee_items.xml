@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+    <TextView
+        android:id="@+id/Employee_fWorkerNr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:text="员工编号"
+        android:layout_weight="1">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Employee_fWorkerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:text="员工名字"
+        android:layout_weight="1">
+    </TextView>
+
+
+</LinearLayout>
+

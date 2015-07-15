@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+    <TextView
+        android:id="@+id/WorkLists_fAutoNr_"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:text="识别码"
+        android:layout_weight="1">
+    </TextView>
+
+    <TextView
+        android:id="@+id/WorkLists_fMouldNr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:text="模具编号"
+        android:layout_weight="1">
+    </TextView>
+
+    <TextView
+        android:id="@+id/WorkLists_fProcName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:text="工艺"
+        android:layout_weight="1">
+    </TextView>
+
+    <TextView
+        android:id="@+id/WorkLists_fPieceName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:text="工件"
+        android:layout_weight="1">
+    </TextView>
+
+    <TextView
+        android:id="@+id/fWorkerNr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:text="员工号"
+        android:layout_weight="1">
+    </TextView>
+
+    <TextView
+        android:id="@+id/fWorkerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:text="员工"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/WorkLists_fMachineNr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:text="机台号"
+        android:layout_weight="1"/>
+
+
+    <TextView
+        android:id="@+id/WorkLists_fMachineName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:text="机台"
+        android:layout_weight="1">
+    </TextView>
+    <TextView
+        android:id="@+id/WorkLists_fSchBegDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:text="计划起工"
+        android:layout_weight="1">
+    </TextView>
+
+    <TextView
+        android:id="@+id/WorkLists_fSchEndDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:text="计划完工"
+        android:layout_weight="1">
+    </TextView>
+</LinearLayout>
