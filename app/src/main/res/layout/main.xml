@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="欢迎使用******"
+        android:text="欢迎使用菜鸡！"
         android:textSize="60dp" />
 
     <TextView
@@ -23,10 +23,10 @@
 
     <Button
         android:id="@+id/Employee"
-        android:layout_below="@+id/Main_Text2"
-        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/Main_Text2"
+        android:layout_centerHorizontal="true"
         android:text="员工登陆"
         android:textSize="30px" />
 
@@ -34,9 +34,9 @@
         android:id="@+id/Setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="设定"
-        android:textSize="30px"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:text="设定"
+        android:textSize="30px" />
 
 </RelativeLayout>
